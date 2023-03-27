@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="tests.TestImplementation" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-03-23T15:50:35" hostname="DESKTOP-ON6AC6J" time="21.977">
+  <properties/>
+  <testcase name="testLoginToGlpi" classname="tests.TestImplementation" time="21.977"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[Starting ChromeDriver 111.0.5563.64 (c710e93d5b63b7095afe8c2c17df34408078439d-refs/branch-heads/5563@{#995}) on port 30150
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Mar 23, 2023 4:50:38 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+</testsuite>
