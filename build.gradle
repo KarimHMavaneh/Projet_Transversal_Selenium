@@ -5,9 +5,11 @@ plugins {
 
 repositories {
     jcenter()
+    mavenCentral()
 }
 
 dependencies {
+    implementation 'org.json:json:20230227'
     testImplementation 'junit:junit:4.13'
     implementation 'org.seleniumhq.selenium:selenium-java:3.141.59'
 }

@@ -6,12 +6,13 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.openqa.selenium.remote.RemoteWebDriver;
 
 public class MyTestDriver implements TestDriver {
 
-    private final WebDriver driver;
+    private final RemoteWebDriver driver;
 
-    public MyTestDriver(WebDriver driver) {
+    public MyTestDriver(RemoteWebDriver driver) {
         this.driver = driver;
     }
 
@@ -71,5 +72,9 @@ public class MyTestDriver implements TestDriver {
     public void scrollToElement(WebElement element) {
         JavascriptExecutor jse = (JavascriptExecutor)this.driver;
         jse.executeScript("arguments[0].scrollIntoView(true);", element);
+    }
+
+    public RemoteWebDriver getDriver() {
+        return driver;
     }
 }

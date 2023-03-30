@@ -1,5 +1,6 @@
 package pages;
 
+import helpers.MyTestDriver;
 import helpers.TestDriver;
 import helpers.TestElement;
 import org.openqa.selenium.By;
@@ -8,10 +9,10 @@ import org.openqa.selenium.WebElement;
 
 public class LoginPage extends GlpiPageObject {
 
-//    private static final String PAGE_URL = "https://tomavt.with16.glpi-network.cloud/index.php";
-    private static final String PAGE_URL = "http://kamkam.infinityfreeapp.com/glpi_10_0_6/index.php";
+    //    private static final String PAGE_URL = "https://tomavt.with16.glpi-network.cloud/index.php";
+    private static final String PAGE_URL = "http://localhost/glpi_10_0_6/index.php";
 
-    public LoginPage(TestDriver driver) {
+    public LoginPage(MyTestDriver driver) {
         super(driver, PAGE_URL);
     }
 

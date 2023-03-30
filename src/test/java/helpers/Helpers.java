@@ -6,8 +6,8 @@ import pages.LoginPage;
 
 public class Helpers {
 
-    public static HomePage login(WebDriver driver, String username, String password) {
-        return new LoginPage(new MyTestDriver(driver))
+    public static HomePage login(MyTestDriver driver, String username, String password) {
+        return new LoginPage(driver)
                 .gotoPage()
                 .setUser(username)
                 .setPassword(password)

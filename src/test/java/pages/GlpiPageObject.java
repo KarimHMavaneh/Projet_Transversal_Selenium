@@ -1,13 +1,14 @@
 package pages;
 
+import helpers.MyTestDriver;
 import helpers.TestDriver;
 
 public abstract class GlpiPageObject {
 
-    protected final TestDriver driver;
+    protected final MyTestDriver driver;
     private final String page_url;
 
-    protected GlpiPageObject(TestDriver driver, String page_url) {
+    protected GlpiPageObject(MyTestDriver driver, String page_url) {
         this.driver = driver;
         this.page_url = page_url;
     }

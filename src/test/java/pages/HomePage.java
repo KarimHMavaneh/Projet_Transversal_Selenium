@@ -6,10 +6,10 @@ import org.openqa.selenium.By;
 
 public class HomePage extends GlpiPageObject {
 
-//    private static final String PAGE_URL = "https://tomavt.with16.glpi-network.cloud/front/central.php";
+    //    private static final String PAGE_URL = "https://tomavt.with16.glpi-network.cloud/front/central.php";
     private static final String PAGE_URL = "http://kamkam.infinityfreeapp.com/glpi_10_0_6/front/central.php";
 
-    public HomePage(TestDriver driver) {
+    public HomePage(MyTestDriver driver) {
         super(driver, PAGE_URL);
     }
 
