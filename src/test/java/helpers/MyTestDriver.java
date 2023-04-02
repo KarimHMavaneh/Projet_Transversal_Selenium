@@ -45,7 +45,7 @@ public class MyTestDriver implements TestDriver {
         findElement(by);
 
         // wait for element to be clickable
-        WebDriverWait wait = new WebDriverWait(this.driver, 10);
+        WebDriverWait wait = new WebDriverWait(this.driver, 15);
         WebElement element = wait.until( ExpectedConditions.elementToBeClickable(by) );
 
         element.click();
@@ -68,13 +68,16 @@ public class MyTestDriver implements TestDriver {
         }
 //        this.driver.quit();
     }
-
-    public void scrollToElement(WebElement element) {
+      public void scrollToElement(WebElement element) {
         JavascriptExecutor jse = (JavascriptExecutor)this.driver;
         jse.executeScript("arguments[0].scrollIntoView(true);", element);
     }
 
     public RemoteWebDriver getDriver() {
         return driver;
+    }
+
+    public void maximizeWindow() {
+        driver.manage().window().maximize();
     }
 }

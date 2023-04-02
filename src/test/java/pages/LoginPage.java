@@ -1,23 +1,27 @@
 package pages;
 
 import helpers.MyTestDriver;
-import helpers.TestDriver;
-import helpers.TestElement;
 import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.WebElement;
 
 public class LoginPage extends GlpiPageObject {
 
     //    private static final String PAGE_URL = "https://tomavt.with16.glpi-network.cloud/index.php";
-    private static final String PAGE_URL = "http://localhost/glpi_10_0_6/index.php";
+    public static final String PAGE_URL_OK = "http://localhost/glpi_10_0_6/index.php";
+    public static final String PAGE_URL_KO = "http://localhost/glpi_10_0_6/front/login.php";
+
+    public static final String TEST_USER_OK = "glpi";
+    public static final String TEST_PASSWORD_OK = "glpi";
+    public static final String TEST_Manager_Equipe = "MANAGER_EQUIPE";
+    public static final String TEST_PASSWORD_ManagerEquipe = "glpi";
+    public static final String TEST_USER_KO = "toto";
+    public static final String TEST_PASSWORD_KO = "toto";
 
     public LoginPage(MyTestDriver driver) {
-        super(driver, PAGE_URL);
+        super(driver, PAGE_URL_OK);
     }
 
     public LoginPage gotoPage() {
-        this.driver.get(PAGE_URL);
+        this.driver.get(PAGE_URL_OK);
         return this;
     }
 
@@ -35,4 +39,15 @@ public class LoginPage extends GlpiPageObject {
         driver.click(By.cssSelector("button[name='submit']"));
         return new HomePage(driver);
     }
+
+    public HomePage login(String userName, String password) {
+        return new LoginPage(driver)
+                .gotoPage()
+                .setUser(userName)
+                .setPassword(password)
+                .clickLoginButton();
+    }
+
+
+
 }

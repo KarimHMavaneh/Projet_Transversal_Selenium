@@ -4,41 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a881d8f3-ba4e-4cd9-a9ab-3a9a6e361d6f" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gradle/7.5.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.5.1/executionHistory/executionHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.5.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.5.1/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.5.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.5.1/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.5.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.5.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.5.1/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.5.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/helpers/Helpers.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/helpers/Helpers.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/helpers/MyTestDriver.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/helpers/MyTestDriver.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/pages/CreerPageTicket.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/pages/CreerPageTicket.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/pages/GlpiPageObject.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/pages/GlpiPageObject.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/pages/HomePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/pages/HomePage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/pages/LoginPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/pages/LoginPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/tests/TestWithPageObject.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/tests/TestWithPageObject.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/buildDashboard/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/buildDashboard/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/tests.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/packages/tests.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/output.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin.idx" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/output.bin.idx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileTestJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileTestJava/previous-compilation-data.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/helpers/Helpers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/helpers/Helpers.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/helpers/MyTestDriver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/helpers/MyTestDriver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/CreerPageTicket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/CreerPageTicket.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/GlpiPageObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/GlpiPageObject.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/HomePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/LoginPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/TestWithPageObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/TestWithPageObject.java" afterDir="false" />
-    </list>
+    <list default="true" id="a881d8f3-ba4e-4cd9-a9ab-3a9a6e361d6f" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -211,7 +177,7 @@
       <workItem from="1679586126180" duration="544000" />
       <workItem from="1680205389808" duration="394000" />
       <workItem from="1680205816566" duration="103000" />
-      <workItem from="1680206068563" duration="25000" />
+      <workItem from="1680206068563" duration="670000" />
     </task>
     <servers />
   </component>
