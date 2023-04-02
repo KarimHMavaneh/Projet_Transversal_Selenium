@@ -13,7 +13,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import pages.*;
-import pages.TicketsPage;
+//import pages.TicketsPage;
 
 import java.util.Optional;
 
