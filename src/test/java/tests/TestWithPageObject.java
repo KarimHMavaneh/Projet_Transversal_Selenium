@@ -67,22 +67,22 @@ public class TestWithPageObject {
         Optional.ofNullable(page).map(GlpiPageObject::close);
     }
 
-//    @Test
-//    public void testSuccessLoginToGlpi() throws InterruptedException {
-//        ChromeOptions options = new ChromeOptions();
-//        options.addArguments("headless");
-////        this.driver = new ChromeDriver(options);
-//
-//        this.page = new LoginPage(this.driver).login(LoginPage.TEST_USER_OK, LoginPage.TEST_PASSWORD_OK);
-//
-//
-//        // Assert
-//        assertEquals(
-//                "The home page is expected",
-//                page.getExpectedUrl(),
-//                page.getCurrentUrl()
-//        );
-//    }
+   @Test
+   public void testSuccessLoginToGlpi() throws InterruptedException {
+       ChromeOptions options = new ChromeOptions();
+       options.addArguments("headless");
+//        this.driver = new ChromeDriver(options);
+
+       this.page = new LoginPage(this.driver).login(LoginPage.TEST_USER_OK, LoginPage.TEST_PASSWORD_OK);
+
+
+       // Assert
+       assertEquals(
+               "The home page is expected",
+               page.getExpectedUrl(),
+               page.getCurrentUrl()
+       );
+   }
 //
 //    @Test
 //    public void testFailLoginToGlpi() throws InterruptedException {
@@ -96,20 +96,20 @@ public class TestWithPageObject {
 //        );
 //    }
 //
-//    @Test
-//    public void testCreateTicket() throws InterruptedException {
-//        this.page = new LoginPage(this.driver).login(LoginPage.TEST_USER_OK, LoginPage.TEST_PASSWORD_OK);
-//        CreateTicketPage page= new CreateTicketPage(this.driver).createATicket();
-//        Thread.sleep(3000);
-//        page.ticketTitleNDescription(title, desc);
-//        Thread.sleep(4000);
-//        //get the inner text of the webelements
-//        TestElement element = this.driver.findElement(By.id("messages_after_redirect"));
-//        String innerText = element.getText();
-//        //Check if the innerText contains the ticket's title
-////        System.out.println("Text = " + innerText.contains("Kamkam RH"));
-//        assertTrue("The innerText should contain ticket's title : Élément ajouté + title", innerText.contains(title));
-//    }
+   @Test
+   public void testCreateTicket() throws InterruptedException {
+       this.page = new LoginPage(this.driver).login(LoginPage.TEST_USER_OK, LoginPage.TEST_PASSWORD_OK);
+       CreateTicketPage page= new CreateTicketPage(this.driver).createATicket();
+       Thread.sleep(3000);
+       page.ticketTitleNDescription(title, desc);
+       Thread.sleep(4000);
+       //get the inner text of the webelements
+       TestElement element = this.driver.findElement(By.id("messages_after_redirect"));
+       String innerText = element.getText();
+       //Check if the innerText contains the ticket's title
+//        System.out.println("Text = " + innerText.contains("Kamkam RH"));
+       assertTrue("The innerText should contain ticket's title : Élément ajouté + title", innerText.contains(title));
+   }
 //    @Test
 //    public void testValidateTicket() throws InterruptedException{
 //        this.page = new LoginPage(this.driver).login(LoginPage.TEST_Manager_Equipe, LoginPage.TEST_PASSWORD_ManagerEquipe);
@@ -129,25 +129,25 @@ public class TestWithPageObject {
 //        assertTrue("Derniere mise a jour", expectedMsg.contains("par MANAGER_EQUIPE"));
 //
 //    }
-    @Test
-    public void testModifyTicket() throws InterruptedException{
-        this.page = new LoginPage(this.driver).login(LoginPage.TEST_USER_OK, LoginPage.TEST_PASSWORD_OK);
-        TicketsPage page= new TicketsPage(this.driver).ticketsListPage();
-        Thread.sleep(4000);
-        page.selectTicket(47);
-        Thread.sleep(3000);
-        page.switchToIframe();
-        Thread.sleep(5000);
-        page.modifyTicket(response);
-        Thread.sleep(6000);
-//        page.confirm();
-        TestElement element = this.driver.findElement(By.id("messages_after_redirect"));
-        String innerText = element.getText();
-//        //Check if the innerText contains the ticket's title
-        System.out.println("Text = " + innerText.contains(LoginPage.TEST_USER_OK));
-        assertTrue("The user's name doesn't contain in the innerText", innerText.contains(title));
+//     @Test
+//     public void testModifyTicket() throws InterruptedException{
+//         this.page = new LoginPage(this.driver).login(LoginPage.TEST_USER_OK, LoginPage.TEST_PASSWORD_OK);
+//         TicketsPage page= new TicketsPage(this.driver).ticketsListPage();
+//         Thread.sleep(4000);
+//         page.selectTicket(47);
+//         Thread.sleep(3000);
+//         page.switchToIframe();
+//         Thread.sleep(5000);
+//         page.modifyTicket(response);
+//         Thread.sleep(6000);
+// //        page.confirm();
+//         TestElement element = this.driver.findElement(By.id("messages_after_redirect"));
+//         String innerText = element.getText();
+// //        //Check if the innerText contains the ticket's title
+//         System.out.println("Text = " + innerText.contains(LoginPage.TEST_USER_OK));
+//         assertTrue("The user's name doesn't contain in the innerText", innerText.contains(title));
 
 
-    }
+//     }
 
 }
