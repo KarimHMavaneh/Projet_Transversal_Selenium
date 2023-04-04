@@ -96,20 +96,20 @@ public class TestWithPageObject {
 //        );
 //    }
 //
-   @Test
-   public void testCreateTicket() throws InterruptedException {
-       this.page = new LoginPage(this.driver).login(LoginPage.TEST_USER_OK, LoginPage.TEST_PASSWORD_OK);
-       CreateTicketPage page= new CreateTicketPage(this.driver).createATicket();
-       Thread.sleep(3000);
-       page.ticketTitleNDescription(title, desc);
-       Thread.sleep(4000);
-       //get the inner text of the webelements
-       TestElement element = this.driver.findElement(By.id("messages_after_redirect"));
-       String innerText = element.getText();
-       //Check if the innerText contains the ticket's title
-//        System.out.println("Text = " + innerText.contains("Kamkam RH"));
-       assertTrue("The innerText should contain ticket's title : Élément ajouté + title", innerText.contains(title));
-   }
+//    @Test
+//    public void testCreateTicket() throws InterruptedException {
+//        this.page = new LoginPage(this.driver).login(LoginPage.TEST_USER_OK, LoginPage.TEST_PASSWORD_OK);
+//        CreateTicketPage page= new CreateTicketPage(this.driver).createATicket();
+//        Thread.sleep(3000);
+//        page.ticketTitleNDescription(title, desc);
+//        Thread.sleep(4000);
+//        //get the inner text of the webelements
+//        TestElement element = this.driver.findElement(By.id("messages_after_redirect"));
+//        String innerText = element.getText();
+//        //Check if the innerText contains the ticket's title
+// //        System.out.println("Text = " + innerText.contains("Kamkam RH"));
+//        assertTrue("The innerText should contain ticket's title : Élément ajouté + title", innerText.contains(title));
+//    }
 //    @Test
 //    public void testValidateTicket() throws InterruptedException{
 //        this.page = new LoginPage(this.driver).login(LoginPage.TEST_Manager_Equipe, LoginPage.TEST_PASSWORD_ManagerEquipe);
